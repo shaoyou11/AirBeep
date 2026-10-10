@@ -1,1 +1,12 @@
 build/
+
+# Local signing and build artifacts
+*.local.xcconfig
+*.p12
+*.p8
+*.mobileprovision
+*.ipa
+*.xcarchive/
+DerivedData/
+xcuserdata/
+.env

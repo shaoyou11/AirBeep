@@ -5,6 +5,7 @@ struct AirBeepApp: App {
     var body: some Scene {
         WindowGroup {
             AirBeepRootView()
+                .safeAreaInset(edge: .bottom) { TunnelTestPanel() }
         }
     }
 }
