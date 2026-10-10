@@ -19,7 +19,7 @@ import Combine
     init() {
         observer = NotificationCenter.default.addObserver(forName: .NEVPNStatusDidChange, object: nil, queue: .main) { [weak self] notification in
             let connection = notification.object as? NEVPNConnection
-            Task { @MainActor in
+            Task { @MainActor [weak self] in
                 guard let self, connection === self.manager?.connection else { return }
                 self.updateStatus()
             }
@@ -74,7 +74,7 @@ import Combine
             }
             errorText = "连接未完成。请检查 VPN 配置、扩展签名和系统兼容性，可重试并分享诊断。"
             m.connection.fetchLastDisconnectError { [weak self] error in
-                Task { @MainActor in
+                Task { @MainActor [weak self] in
                     guard let self, self.attempt == current, let error else { return }
                     self.record(error)
                 }
