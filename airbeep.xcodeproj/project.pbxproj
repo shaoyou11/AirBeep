@@ -438,7 +438,7 @@
 				<key>CODE_SIGN_STYLE</key>
 				<string>Automatic</string>
 				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
+				<string>2</string>
 				<key>DEVELOPMENT_TEAM</key>
 				<string>32SCVH99SP</string>
 				<key>ENABLE_PREVIEWS</key>
@@ -530,7 +530,7 @@
 				<key>CODE_SIGN_STYLE</key>
 				<string>Automatic</string>
 				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
+				<string>2</string>
 				<key>DEVELOPMENT_TEAM</key>
 				<string>32SCVH99SP</string>
 				<key>ENABLE_PREVIEWS</key>
